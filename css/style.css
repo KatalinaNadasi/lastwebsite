@@ -1,0 +1,280 @@
+/***********
+RESET CODE
+************/
+
+article, aside, details, figcaption,  figure,  footer, header, hgroup, menu, nav, section {
+	display : block ;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/     v2.0 | 20110126    License: none (public domain) */  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
+
+.grouping :before,
+.grouping :after {
+content :  " ";
+display : table;
+}
+
+.grouping :after {
+clear :both;
+}
+
+img, iframe, video, object {
+max-width : 100%;
+}
+
+strong, b {
+font-weight : bold;
+}
+
+/***********
+GENERAL
+************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Elsie', cursive;
+  font-size: 11rem;
+}
+
+.wrapper {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden,
+.hide {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.button {
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  transition: 25s all linear;
+  height: 50px;
+}
+
+.button-sm {
+  width: 70px;
+}
+
+.button-lg {
+  width: 170px;
+}
+
+
+/***********
+NAVBAR
+************/
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.primary-nav {
+  width: 100%;
+  height: 48px;
+  background-color: none;
+}
+
+.primary-nav > li {
+  float: right;
+}
+
+.submenu ul {
+  position: absolute;
+  top: 41px;
+  right: 19px;
+  display: none;
+}
+
+.submenu:hover ul {
+  display: block;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes slidedown {
+  0% {-webkit-transform: translateY(-100%); opacity: 0;}
+  90% {-webkit-transform: translateY(10%);}
+  100% {-webkit-transform: translateY(0%); opacity: 1;}
+}
+
+.submenu a {
+  display: block;
+}
+
+.submenu li {
+  margin: 7px 4px;;
+  padding: 13px;
+}
+
+li .submenu {
+  list-style-type: none !important;
+}
+
+.submenu li:hover {
+  background-color: #E6E6E6;
+  border: solid 1px grey;
+}
+
+.fa {
+  color: black !important;
+  float: right;
+  padding-right: 24px;
+  padding-top: 10px;
+  -webkit-animation : crazyMenu 1s ease;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+  animation : crazyMenu 1s ease;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+@-webkit-keyframes crazyMenu {
+  0% {-webkit-transform: translate(90%, 70%); opacity: 0;}
+  33% {-webkit-transform: translate(40%, 20%) rotate(90deg);}
+  66% {-webkit-transform: translate(10%, 50%);}
+  100% {-webkit-transform: translate(0%) rotate(0deg); opacity: 1;}
+}
+@keyframes crazyMenu {
+  0% {transform: translate(90%, 70%); opacity: 0;}
+  33% {transform: translate(40%, 20%) rotate(90deg);}
+  66% {transform: translate(10%, 50%);}
+  100% {transform: translate(0%) rotate(0deg); opacity: 1;}
+}
+
+
+/*bootstrap nav*/
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+.navbar-nav {
+    float: none!important;
+}
+.navbar-nav>li {
+    float: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top {
+    background-color: white;
+    border-color: white;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: white;
+}
+
+/***********
+LANDING
+************/
+
+
+.landing {
+  min-height: 550px;
+  background: #FE4365;
+  border-corner-shape: bevel;
+  border-radius: 999px 999px 0 0;
+  width: 1100px;
+  margin-top: 210px;
+}
+
+.landing .button {
+  color: white;
+  background: linear-gradient(0deg, #FE4365 20%, #CC2A41 100%) !important;
+}
+
+.landing .button:hover {
+  background: #FE4365 !important;
+}
+
+.landing-bottom {
+  height: 550px;
+  width: 1100px;
+  background: rgba(165, 26, 65, 0.1);
+  /*border-corner-shape: curve;*/
+  border-radius: 0 0 999px 999px;
+}
+
+/***********
+SECTION QUOTE
+************/
+
+.section-quote {
+  height: 650px;
+  text-align: center;
+  line-height: 400px;
+  background: #FE4365;
+  border-corner-shape: bevel;
+  border-radius: 0px 999px 0px 999px;
+}
+
+.section-quote p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11rem;
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #00ffff 100% ) repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 
 <head>
+  <!--[if lt IE 9]> 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script> <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Katalina Nadasi</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Elsie|Raleway|Montserrat:700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <!-- stylesheets for older browsers -->
+    <!-- ie6/7 micro clearfix -->
+    <!-- [if lte IE 7]>
+    <style>
+      .grouping {
+        *zoom: 1;
+      }
+    </style>
+    <![endif]-->
+
 </head>
 
 <body>
@@ -40,8 +57,28 @@ Petit chenapant, si tu veux regarder mon code source, pourquoi pas plutôt me co
 Je suis sûre que l'on va bien s'entendre.
   -->
 
+<!-- navbar -->
 
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="primary-nav">
+  <figure>
+    <span>
+      <ul>
+        <li class="submenu"><i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+          <ul>
+            <li>Réalisations</li>
+            <li>Animations</li>
+            <li>On en parle</li>
+            <li>Contact</li>
+          </ul>
+        </li>
+      </ul>
+    </span>
+  </figure>
+
+
+</nav>
+
+<!-- <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -50,10 +87,10 @@ Je suis sûre que l'on va bien s'entendre.
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
+        </div> -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
@@ -63,31 +100,30 @@ Je suis sûre que l'on va bien s'entendre.
             </ul>
         </div>
     </div>
-</nav>
+</nav> -->
 
-<header>
+<!-- end navbar -->
+
+<header class="wrapper grouping">
 <!-- <video autoplay loop muted poster="img/background.jpg" id="background"> -->
 <!-- <source src="background.MOV"> -->
 <!-- <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"> -->
 <!-- </video> -->
-  <div class="container" id="header">
-
-        <h1>Site internet responsive et expérientiel</h1>
-        <h2>Développement et animations</h2>
-        <button class="btn btn-lg" id="devis">Je veux un site !</button>
-
+  <div class="landing">
+        <button class="button button-lg">Je veux un site !</button>
   </div>
+  <div class="landing-bottom">
+  </div>
+
 </header>
 
 
-<section>
-  <div class="container-fluid" id="section2">
-  </div>
-</section>
-<section>
-  <div class="container-fluid" id="quote">
+<section class="section-quote">
+
+  <div>
     <p>less is more</p>
   </div>
+
 </section>
 
 </body>
