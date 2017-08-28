@@ -12,19 +12,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
 
-    <!-- stylesheets for older browsers -->
-    <!-- ie6/7 micro clearfix -->
-    <!-- [if lte IE 7]>
-    <style>
-      .grouping {
-        *zoom: 1;
-      }
-    </style>
-    <![endif]-->
-
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 </head>
 
 <body>
@@ -59,48 +50,25 @@ Je suis sûre que l'on va bien s'entendre.
 
 <!-- navbar -->
 
+<div id="root"></div>
+
+
 <nav class="primary-nav">
   <figure>
     <span>
       <ul>
-        <li class="submenu"><i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+        <li class="submenu"><i class="fa fa-3x fa-bars" aria-hidden="true"></i>
           <ul>
-            <li>Réalisations</li>
-            <li>Animations</li>
-            <li>On en parle</li>
-            <li>Contact</li>
+            <li><a href="#">Réalisations</a></li>
+            <li><a href="#">Animations</a></li>
+            <li><a href="#">On en parle</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </li>
       </ul>
     </span>
   </figure>
-
-
 </nav>
-
-<!-- <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div> -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
 
 <!-- end navbar -->
 
@@ -109,21 +77,29 @@ Je suis sûre que l'on va bien s'entendre.
 <!-- <source src="background.MOV"> -->
 <!-- <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"> -->
 <!-- </video> -->
-  <div class="landing">
-        <button class="button button-lg">Je veux un site !</button>
+  <div class="landing-top">
+    <!-- <button class="button button-lg">Je veux un site !</button> -->
   </div>
-  <div class="landing-bottom">
-  </div>
-
 </header>
+
+<section class="rise">
+  <div class="wrapper">
+    <div class="landing landing-anim">
+      <h1>Katal<span>i</span>na</br>Na<span>d</span>asi</h1>
+      <p id="landing-subtitle1">Dévelopeur Front-End</p>
+      <p id="landing-subtitle2">Dévelopeuse Front-End</p>
+    </div>
+    <div class="landing-anim">
+      <div class="landing-bottom"></div>
+    </div>
+  </div>
+</section>
 
 
 <section class="section-quote">
-
   <div>
     <p>less is more</p>
   </div>
-
 </section>
 
 </body>
@@ -135,5 +111,6 @@ Je suis sûre que l'on va bien s'entendre.
 <!-- minified Bootstrap JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </html>
